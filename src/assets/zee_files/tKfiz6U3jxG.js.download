@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["jWT6m"]); }
+
+__d("relay-experimental/useFragmentNode",["react","relay-experimental/useFragmentNodes"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g=b("react").useMemo;function a(a,c,d){var e=g(function(){return{result:a}},[a]),f=g(function(){return{result:c}},[c]);e=b("relay-experimental/useFragmentNodes")(e,f,d);f=e.data;d=e.disableStoreUpdates;var h=e.enableStoreUpdates;e=e.shouldUpdateGeneration;return{data:f.result,disableStoreUpdates:d,enableStoreUpdates:h,shouldUpdateGeneration:e}}e.exports=a}),null);

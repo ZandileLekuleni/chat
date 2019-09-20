@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="danger">
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>User</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="background-image">
+    <ion-tabs>
+
+        <ion-tab-bar slot="bottom" color="danger">
+         
+          <ion-tab-button tab1="chat" routerLink="/chat">
+            <ion-icon name="md-chatbubbles"></ion-icon>
+            <ion-label>Chats</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button tab3="profile" routerLink="/profile">
+            <ion-icon name="md-person"></ion-icon>
+            <ion-label>Profile</ion-label>
+          </ion-tab-button>
+    
+          <ion-tab-button tab1="user" routerLink="/user">
+            <ion-icon name="md-chatbubbles"></ion-icon>
+            <ion-label>Users</ion-label>
+          </ion-tab-button> 
+    
+        </ion-tab-bar>
+      
+      </ion-tabs>
+  <ion-list>
+      <ion-list>
+          <ion-item-sliding *ngFor="let key of users | async">
+              <div *ngIf="key.uid != uid">
+                  <ion-item>
+                      <ion-avatar item-left>
+                          <img src="{{key.photoURL}}">
+                      </ion-avatar> &nbsp;
+                      <h3>{{key.displayName}}</h3>
+                  </ion-item>
+                  <ion-item-options slide="left">
+                      <button ion-button color="primary" (click)="message(key)">
+                            <ion-icon name="person">
+                            </ion-icon>
+                            chat
+                          </button>
+                  </ion-item-options>
+              </div>
+
+          </ion-item-sliding>
+      </ion-list>
+  </ion-list>
+
+</ion-content>

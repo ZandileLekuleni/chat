@@ -1,0 +1,26 @@
+ion-title{
+    text-align: center;
+}
+.background-image{
+    --background: url("/assets/wa.jpg") 0 0/100% 100% no-repeat;
+}
+
+ion-item{
+    --background: #798ea1;
+    --color: white;
+}
+ion-button{
+    --background: #798ea1;
+    
+}
+
+a{
+    color: white;
+}
+h3{
+    color: white
+}
+.null{
+    text-align: center;
+    color: white;
+}

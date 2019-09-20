@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>{{displayName}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+        
+                
+  <div class="chat" *ngFor="let chat of chatRef | async">
+      <div class="me" *ngIf="uid== chat.userid && chat.sendTo == sendto">
+          {{chat.message}}
+          <img src="{{chat.photoURL}}">
+
+      </div>
+      <div class="you" *ngIf="chat.sendTo == uid && chat.userid == sendto">
+          {{chat.message}}
+          <img src="{{chat.photoURL}}">
+</div>
+      </div>
+  
+
+</ion-content>
+<ion-footer>
+    
+  <ion-item>
+        <input style="display: none" type="file" (change)="upload($event)" #fileInput>
+        <ion-icon name="attach" (click)="fileInput.click()" color="dark">
+        </ion-icon>&nbsp;
+
+      <ion-input placeholder="Type..." [(ngModel)]="text"></ion-input>
+      <ion-button (click)="send()" fill="clear" icon-only slot="end">
+          <ion-icon name="send"></ion-icon>
+      </ion-button>
+  </ion-item>
+</ion-footer>

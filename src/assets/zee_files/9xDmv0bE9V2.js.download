@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["EZ3Wy"]); }
+
+__d("relay-experimental/RelayEnvironmentProvider",["react","react-relay/ReactRelayContext"],(function(a,b,c,d,e,f){"use strict";var g=b("react").useMemo;function a(a){var c=a.children,d=a.environment;a=g(function(){return{environment:d,variables:{}}},[d]);return b("react").createElement(b("react-relay/ReactRelayContext").Provider,{value:a},c)}e.exports=a}),null);

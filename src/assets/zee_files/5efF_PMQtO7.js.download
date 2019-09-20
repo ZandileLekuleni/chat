@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["bOCDU"]); }
+
+__d("relay-experimental/getPaginationMetadata",["invariant","relay-experimental/getRefetchMetadata"],(function(a,b,c,d,e,f,g){"use strict";__p&&__p();function a(a,c){var d,e=b("relay-experimental/getRefetchMetadata")(a,c),f=e.refetchableRequest,h=e.fragmentRefPathInResponse;e=e.refetchMetadata;e=e.connection;e!=null||g(0,14162,c,a.name);var i=e.path;d=((d=(d=a.metadata)==null?void 0:d.connection)!=null?d:[])[0];d!=null||g(0,14162,c,a.name);return{connectionPathInFragmentData:i,fragmentRefPathInResponse:h,paginationRequest:f,paginationMetadata:e,stream:d.stream===!0}}e.exports=a}),null);

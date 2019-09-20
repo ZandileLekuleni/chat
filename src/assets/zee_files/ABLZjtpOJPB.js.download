@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["sQDXD"]); }
+
+__d("TetraLineClamp.react",["React","gkx","stylex"],(function(a,b,c,d,e,f){"use strict";function a(a){var c=b("gkx")("1105608"),d=c?{WebkitLineClamp:a.lines}:{maxHeight:a.lineHeight*a.lines};a=c?a.children:b("React").createElement(b("React").Fragment,null,a.children,b("React").createElement("span",{"aria-hidden":!0,className:"f8ljpb73 pmk7jnqg pxtqik3h n7fi1qx3 i09qtzwb cwj9ozl2"},"\u2026"),b("React").createElement("span",{"aria-hidden":!0,className:"k4urcfbm pmk7jnqg datstx6m cwj9ozl2"}));return b("React").createElement("div",{className:"l9j0dhe7 stjgntxs ni8dbmo4"+(c?" ea0o37xn dtbsuwy1":""),style:d},a)}e.exports=a}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["ixkVi"]); }
+
+__d("relay-experimental/useQuery",["relay-experimental/useMemoOperationDescriptor","relay-experimental/useQueryNode"],(function(a,b,c,d,e,f){"use strict";function a(a,c,d){a=b("relay-experimental/useMemoOperationDescriptor")(a,c);c=b("relay-experimental/useQueryNode")({query:a,fetchKey:d==null?void 0:d.fetchKey,fetchPolicy:d==null?void 0:d.fetchPolicy,componentDisplayName:"useQuery()"});return c}e.exports=a}),null);

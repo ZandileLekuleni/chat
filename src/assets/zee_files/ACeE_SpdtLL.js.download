@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["kyQGj"]); }
+
+__d("relay-experimental/useFetchTrackingRef",["react"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g=b("react").useCallback,h=b("react").useEffect,i=b("react").useRef;function a(){var a=i(null),b=i(!1),c=g(function(){a.current!=null&&(a.current.unsubscribe(),a.current=null),b.current=!1},[]),d=g(function(d){c(),a.current=d,b.current=!0},[c]),e=g(function(){a.current=null,b.current=!1},[]);h(function(){return c},[c]);return{isFetchingRef:b,startFetch:d,disposeFetch:c,completeFetch:e}}e.exports=a}),null);

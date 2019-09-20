@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["lOzuC"]); }
+
+__d("relay-experimental/useFragment",["relay-experimental/useFragmentNode","relay-experimental/useStaticPropWarning","relay-runtime"],(function(a,b,c,d,e,f){"use strict";var g=b("relay-runtime").getFragment;function a(a,c){b("relay-experimental/useStaticPropWarning")(a,"first argument of useFragment()");a=g(a);a=b("relay-experimental/useFragmentNode")(a,c,"useFragment()");c=a.data;return c}e.exports=a}),null);

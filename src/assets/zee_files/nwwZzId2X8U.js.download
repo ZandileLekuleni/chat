@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["RWltX"]); }
+
+__d("StoriesCardOverlayExternalSong_overlay.graphql",[],(function(a,b,c,d,e,f){"use strict";a={kind:"Fragment",name:"StoriesCardOverlayExternalSong_overlay",type:"StoryOverlayExternalSong",metadata:null,argumentDefinitions:[],selections:[{kind:"ScalarField",alias:null,name:"url",args:null,storageKey:null},{kind:"LinkedField",alias:null,name:"link_bounds",storageKey:null,args:null,concreteType:"StoryOverlayRectangle",plural:!1,selections:[{kind:"ScalarField",alias:null,name:"y",args:null,storageKey:null}]}]};e.exports=a}),null);

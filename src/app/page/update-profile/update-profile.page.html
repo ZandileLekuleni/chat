@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Update-Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   
+    <ion-item class="background-image">
+      <ion-label>Username: </ion-label>
+        <ion-input type="text" [(ngModel)]="user.displayName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Gender: </ion-label>
+        <ion-input type="text" [(ngModel)]="user.gender"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Bio: </ion-label>
+          <ion-input type="text" [(ngModel)]="user.bio"></ion-input>
+        </ion-item>
+
+        <ion-row>
+          <ion-col>
+              <ion-text class="error" text-center>{{error}}</ion-text>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              <ion-text class="error" text-center>{{linkError}}</ion-text>
+          </ion-col>
+      </ion-row>
+      <!-- <ion-button expand="block" color="dark" (click)="onEdit(User)">Update</ion-button> -->
+
+
+
+      <ion-button color="danger" shape="round" (click)="onEdit(user)">Update</ion-button>
+    <br>
+</ion-content>

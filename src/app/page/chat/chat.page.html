@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+  </ion-buttons>
+      <ion-title>
+          Chat Room
+      </ion-title>
+      
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div class="chat" *ngFor="let chat of chatRef | async">
+      <div class="me" *ngIf="uid==chat.UserID">
+          {{chat.Message}}
+      </div>
+
+      <div class="you" *ngIf="uid != chat.UserID">
+          <span class="name">
+    {{chat.Name}}
+  </span><br> {{chat.Message}}
+      </div>
+  </div>
+
+</ion-content>
+
+<ion-footer color="dark">
+  
+  <ion-item>
+    <input style="display: none" type="file" (change)="upload($event)" #fileInput>
+    <ion-icon name="attach" (click)="fileInput.click()" color="dark">
+    </ion-icon>&nbsp;
+
+      <ion-input placeholder="Type Message....." [(ngModel)]="text"></ion-input>
+      <ion-button (click)="send()" fill="clear" icon-only slot="end">
+          <ion-icon name="send"></ion-icon>
+      </ion-button>
+  </ion-item>
+  <br>
+  <br>
+  <br>
+  
+  <ion-tabs>
+
+    <ion-tab-bar slot="bottom" color="danger">
+  
+      <ion-tab-button tab1="chat" routerLink="/chat">
+        <ion-icon name="md-chatbubbles"></ion-icon>
+        <ion-label>Chats</ion-label>
+      </ion-tab-button> 
+  
+      
+      <ion-tab-button tab3="profile" routerLink="/profile">
+        <ion-icon name="md-person"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab1="user" routerLink="/user">
+      <ion-icon name="md-chatbubbles"></ion-icon>
+      <ion-label>Users</ion-label>
+    </ion-tab-button> 
+  
+    </ion-tab-bar>
+  
+  </ion-tabs>
+</ion-footer>
+
+

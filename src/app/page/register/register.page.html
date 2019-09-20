@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Chat Zone</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="background-image">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <ion-card>
+  <form  #form="ngForm" (ngSubmit)="register(form)">
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h3>Create your account!</h3>
+          </div>
+          <div >
+            
+            <!-- <ion-item>
+              <ion-input  name="username" type="text" placeholder="Username"  [(ngModel)]="username" class="input" padding-horizontal clear-input="true"></ion-input>
+            </ion-item>
+            <ion-item> 
+              <ion-input name="email" type="email" placeholder="Email"  [(ngModel)]="email" class="input" padding-horizontal clear-input="true"></ion-input>
+            </ion-item> -->
+             <!-- <ion-item>
+              <ion-input  name="gender" type="text" placeholder="Gender"  [(ngModel)]="gender" class="input" padding-horizontal clear-input="true"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input  name="bio" type="text" placeholder="Bio"  [(ngModel)]="bio" class="input" padding-horizontal clear-input="true"></ion-input>
+            </ion-item> -->
+            <!-- <ion-item>
+              <ion-input name="password" type="password" placeholder="Password"  [(ngModel)]="password" class="input" padding-horizontal clear-input="true"></ion-input>
+            </ion-item> -->
+
+            <ion-item>
+              <ion-label position='floating'>
+                  Username
+              </ion-label>
+              <ion-input type="text" [(ngModel)]="username" class="input" padding-horizontal clear-input="true"></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+              <ion-label position='floating'>
+                  Age
+              </ion-label>
+              <ion-input type="text" [(ngModel)]="age" class="input" padding-horizontal clear-input="true"></ion-input>
+          </ion-item>
+          <br>
+
+          <ion-item>
+              <ion-label position='floating'>
+                  Gender
+              </ion-label>
+              <ion-select [(ngModel)]="gender" type="text" class="input" padding-horizontal clear-input="true">
+                  <ion-select-option value="female">Female</ion-select-option>
+                  <ion-select-option value="male">Male</ion-select-option>
+              </ion-select>
+          </ion-item>
+          <br>
+
+          <ion-item>
+              <ion-label position='floating'>
+                  Email
+              </ion-label>
+              <ion-input type="email" [(ngModel)]="email" padding-horizontal clear-input="true"></ion-input>
+          </ion-item>
+          <br>
+          <ion-item>
+              <ion-label position='floating'>
+                  Password
+              </ion-label>
+              <ion-input type="password" [(ngModel)]="pwd" class="input" padding-horizontal clear-input="true"></ion-input>
+          </ion-item>
+           
+          </div>
+          <br>
+         
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-card>
+<div>
+            
+  <ion-button color="danger" size="large" expand="block" (click)="register(user)" >REGISTER</ion-button>
+</div>
+</ion-content>

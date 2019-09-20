@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["vAgGN"]); }
+
+__d("relay-experimental/useMemoVariables",["react","areEqual"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g=b("react").useMemo,h=b("react").useRef,i=b("react").useState;function a(a){__p&&__p();var c=h(0),d=i(a),e=d[0];d=d[1];e=!b("areEqual")(a,e);if(e){c.current=((e=c.current)!=null?e:0)+1;d(a)}e=g(function(){return a},[c.current]);return[e,(d=c.current)!=null?d:0]}e.exports=a}),null);

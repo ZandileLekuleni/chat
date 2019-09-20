@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["rnum1"]); }
+
+__d("relay-experimental/useMemoOperationDescriptor",["react","relay-experimental/useMemoVariables","relay-runtime"],(function(a,b,c,d,e,f){"use strict";var g=b("relay-runtime").createOperationDescriptor,h=b("relay-runtime").getRequest,i=b("react").useMemo;function a(a,c){c=b("relay-experimental/useMemoVariables")(c);var d=c[0];return i(function(){return g(h(a),d)},[a,d])}e.exports=a}),null);

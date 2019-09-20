@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["rTn\/m"]); }
+
+__d("UFI2CommentActorNameDynamic_comment.graphql",[],(function(a,b,c,d,e,f){"use strict";a={kind:"Fragment",name:"UFI2CommentActorNameDynamic_comment",type:"Comment",metadata:null,argumentDefinitions:[{kind:"RootArgument",name:"isComet",type:"Boolean!"}],selections:[{kind:"Condition",passingValue:!0,condition:"isComet",selections:[{kind:"FragmentSpread",name:"CometUFI2CommentActorName_comment",args:null}]}]};e.exports=a}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["IxD8P"]); }
+
+__d("relay-experimental/getRefetchMetadata",["invariant"],(function(a,b,c,d,e,f,g){"use strict";__p&&__p();function a(a,b){var c;((c=a.metadata)==null?void 0:c.plural)!==!0||g(0,14163,a.name,b,a.name,b);c=(c=a.metadata)==null?void 0:c.refetch;c!=null||g(0,14164,b,a.name);a=c.operation;var d=c.fragmentPathInResult;typeof a!=="string"||g(0,14165,b);return{refetchableRequest:a,fragmentRefPathInResponse:d,refetchMetadata:c}}e.exports=a}),null);

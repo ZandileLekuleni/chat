@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="danger">
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+       
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="background-image">
+  <ion-card class="black">
+      <img src="{{photoURL}}" > 
+      <br><br>
+       
+
+     
+  </ion-card>
+  <input type="file" (change)="upload($event)" accept=".png,.jpg" />
+  <!-- <ion-button expand="block" color="danger" routerLink="/login">Logout</ion-button> -->
+  <br>
+  <ion-label class="col">
+    <p>
+        <font size="4"> Name: {{userList?.displayName}}</font>
+    </p>
+    <br>
+    <p>
+        <font size="4"> Bio: {{userList?.bio}}</font>
+    </p>
+    <br>
+    <p>
+        <font size="4"> Gender: {{userList?.gender}}</font>
+    </p>
+    <br>
+</ion-label>
+<ion-button expand="block" color="danger" (click)="onEdit(userList)">Update</ion-button>
+<ion-button expand="block" color="danger" routerLink="/login">Logout</ion-button>
+
+  <!-- <ion-button expand="block" color="danger" routerLink="/update-profile">Logout</ion-button> -->
+
+</ion-content>
+
+
+
+ 

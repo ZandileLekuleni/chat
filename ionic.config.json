@@ -1,5 +1,7 @@
 {
   "name": "ChatZone",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["o1FML"]); }
+
+__d("relay-experimental/useRefetchableFragment",["relay-experimental/useRefetchableFragmentNode","relay-experimental/useStaticPropWarning","relay-runtime"],(function(a,b,c,d,e,f){"use strict";__p&&__p();var g=b("relay-runtime").getFragment;function a(a,c){b("relay-experimental/useStaticPropWarning")(a,"first argument of useRefetchableFragment()");a=g(a);a=b("relay-experimental/useRefetchableFragmentNode")(a,c,"useRefetchableFragment()");c=a.fragmentData;a=a.refetch;return[c,a]}e.exports=a}),null);

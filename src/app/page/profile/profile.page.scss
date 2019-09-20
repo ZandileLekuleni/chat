@@ -1,0 +1,29 @@
+ion-title{
+    text-align: center;
+}
+
+page-profilepic {
+    .profile-image{
+        img{
+            
+            border-radius:50%;
+           
+          
+        }
+    }
+    .scroll-content {
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    }
+    img{
+            
+        border-radius:50%;
+    }
+    .black{
+        --background: url("/assets/wa.jpg") 0 0/100% 100% no-repeat;
+    }
+    

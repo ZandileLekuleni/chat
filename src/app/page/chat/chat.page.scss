@@ -1,0 +1,91 @@
+ion-title{
+    text-align: center;
+}
+.chat {
+   display: flex;
+   flex-direction: column;
+   .me {
+       position: relative;
+       float: right;
+       margin: 20px 5px 0px;
+       max-width: 80%;
+       align-self: flex-end;
+       padding: 6px 10px 7px;
+       border-radius: 15px 15px 0;
+       background: rgb(174, 241, 174);
+       //box-shadow: 0 4px 8px 0 rgba(0,0,0,2);
+       font-size: medium;
+       line-height: 1.4;
+   }
+   .you {
+       position: relative;
+       margin: 15px;
+       max-width: 80%;
+       align-self: flex-start;
+       padding: 6px 10px 7px;
+       border-radius: 15px 15px 15px 0;
+       background: #798ea1;
+       //box-shadow: 0 4px 8px 0 rgba(0,0,0,2);
+       font-size: medium;
+       line-height: 1.4;
+   }
+   .name {
+       font-size: small;
+       font-weight: bold;
+   }
+}
+.me {
+   float: right;
+}
+
+// page-chat {
+//     .inner{
+//         display: inline-block;
+//         padding: 5px 10px;
+//         background: blue;
+//         margin: 5px;
+//         color: white;
+//         border-radius: 3px;
+
+//     }
+//     .innerMessage.messageRight {
+//         background-color: #798ea1;
+//     }
+//     .username {
+//         font-weight: bold;
+//         font-size: 80%;
+//     }
+//     .message {
+//         font-size: 120%;
+//     }
+//     .elem button {
+//         border-radius: 0;
+//         margin: 0;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//     }
+//     .elem {
+//         position: relative;
+//         min-width: 50px;
+//     }
+//     div#footer div.elem:first-child {
+//         flex-grow: 1;
+//     }
+//     div#footer {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: stretch;
+//     }
+//     ion-input {
+        
+//         padding-left: 15px;
+//         font-size: 125px;
+//     }
+//     .messageLeft {
+//         float: left;
+//     }
+
+// }
